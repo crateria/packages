@@ -1,3 +1,8 @@
 /update
 .DS_Store
 Thumbs.db
+
+# Build outputs
+target/
+*.deb.bak
+PRUNE_TMPDIR
