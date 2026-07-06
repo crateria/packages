@@ -2996,6 +2996,23 @@ Description: [generated from Rust crate vice]
  Vice: Secure, multi-threaded archive manager in Rust (includes CLI and TUI
  tools).
 
+Package: vice-archiver
+Version: 0.1.13-1
+Architecture: amd64
+Maintainer: UberMetroid
+Installed-Size: 3285
+Depends: libc6 (>= 2.39)
+Filename: pool/main/vice-archiver_0.1.13-1_amd64.deb
+Size: 877260
+MD5sum: 2be1aeb64ccf348515e488f1592ca055
+SHA1: a66a5e51b110b2d9d1baea5d616ba41ba4e4381e
+SHA256: 6f75091b4cb3881de74089c30f77369248a459c9b35f8c52c0b6bd066572f48f
+Section: utils
+Priority: optional
+Description: [generated from Rust crate vice-archiver]
+ Vice: Secure, multi-threaded archive manager in Rust (includes CLI and TUI
+ tools).
+
 Package: vice-cli
 Version: 0.1.10-1
 Architecture: amd64
