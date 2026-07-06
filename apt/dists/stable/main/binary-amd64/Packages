@@ -2946,3 +2946,35 @@ Description: Meta package that recommends all official trance screensaver plugin
  Convenience meta package that recommends the optional trance screensaver
  plugins. The stock beams effect ships with the core trance package.
 
+Package: vice-cli
+Version: 0.1.3-1
+Architecture: amd64
+Maintainer: UberMetroid
+Installed-Size: 1698
+Depends: libc6 (>= 2.34)
+Filename: pool/main/vice-cli_0.1.3-1_amd64.deb
+Size: 657836
+MD5sum: ca2edee6c9e3f2e83d67f054baabedc7
+SHA1: c284d731e75b7a4509cf5c38e8ea51fc4836358f
+SHA256: 5dc23f0c48d1b031e779fef1b11de3ed330989ff92c8e813a43679a13ee6d869
+Section: utils
+Priority: optional
+Description: [generated from Rust crate vice-cli]
+ Vice is a secure, multi-threaded archive manager in Rust (CLI tool).
+
+Package: vice-tui
+Version: 0.1.3-1
+Architecture: amd64
+Maintainer: UberMetroid
+Installed-Size: 996
+Depends: libc6 (>= 2.39)
+Filename: pool/main/vice-tui_0.1.3-1_amd64.deb
+Size: 406660
+MD5sum: db0e774cfa52fa9c6ce1df4198048be7
+SHA1: 72381a5787e4e4126d53310913e196962d77001a
+SHA256: a9c4eb1de3aeb0b9ab164ff693dc06b5a9d0d3772c667f894a6c176538d7b29c
+Section: utils
+Priority: optional
+Description: [generated from Rust crate vice-tui]
+ Vice is a secure, multi-threaded archive manager in Rust (TUI tool).
+
