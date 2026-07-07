@@ -7,7 +7,7 @@ Official Debian (APT) and Fedora (DNF) package repositories hosting native deskt
 ## 🏛️ Architecture & Stack
 *   **Format**: APT (.deb) / DNF (.rpm) package indexes
 *   **Hosting**: GitHub Pages
-*   **Target Platforms**: Debian, Ubuntu, Pop!_OS, Fedora, RHEL, CentOS
+*   **Target Platforms**: Debian, Ubuntu, Pop!_OS, Fedora, RHEL, CentOS.
 
 ---
 
