@@ -178,22 +178,6 @@ Description: Command-line interface for the trance screensaver daemon
  Thin CLI for controlling the trance screensaver daemon over D-Bus.
 
 Package: trance-plugin-beams
-Version: 0.2.8-1
-Architecture: amd64
-Maintainer: Screensavers Developer <dev@trance.org>
-Installed-Size: 330
-Depends: libc6
-Filename: pool/main/trance-plugin-beams_0.2.8-1_amd64.deb
-Size: 151940
-MD5sum: ef5aef37cf15549e73ac8723a82aa634
-SHA1: 6c308323ec1d6873a1cad310f221abf80d6d6e86
-SHA256: 73c5e9d9b7fb5b0457774d93b99f03dd93f448bc5b6ca0e6ba442efe2abf6cfe
-Section: utils
-Priority: optional
-Description: beams - retro terminal screensaver effect
- Screensaver effect (beams) part of the screensavers collection.
-
-Package: trance-plugin-beams
 Version: 0.3.0-1
 Architecture: amd64
 Maintainer: UberMetroid <jerydleuck@gmail.com>
@@ -221,6 +205,23 @@ Size: 153232
 MD5sum: 7c39030d780403f2114bfdb62d4f6e9a
 SHA1: e9b6c6e2502d773ac3d80916cd54187afbaaa09f
 SHA256: 70007103e48b4e70af687cae0536e539a630d8afac0ee4bd95958ecfde2feb49
+Section: utils
+Priority: optional
+Description: Spotlight cones sweeping a rising dust starfield
+ Spotlight cones sweeping a rising dust starfield. Official trance screensaver
+ plugin.
+
+Package: trance-plugin-beams
+Version: 0.3.2-1
+Architecture: amd64
+Maintainer: UberMetroid <jerydleuck@gmail.com>
+Installed-Size: 329
+Depends: libc6
+Filename: pool/main/trance-plugin-beams_0.3.2-1_amd64.deb
+Size: 153536
+MD5sum: a81f2b4042bc9330efd691789113e1db
+SHA1: 1ab20b54427705f29d50a5943d49934b407cdf75
+SHA256: bb90178cc635fa1e9a9ef5345f904083bd82a329cbbb28e743eacf352df60bfa
 Section: utils
 Priority: optional
 Description: Spotlight cones sweeping a rising dust starfield
