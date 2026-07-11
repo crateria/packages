@@ -50,7 +50,7 @@ See also `apt/MAINTAINER.md`.
 | :--- | :--- |
 | **Build packages** | From `trance/`: `./package.rs` (or `cargo deb` / `cargo generate-rpm` per crate); plugins from `trance-plugins/package.rs` |
 | **Index + sign** | From this repo: `./update.sh` — must have GPG secret key; do **not** publish unsigned indexes |
-| **RPM packages** | Run `./sign_all.sh` so individual RPMs verify under `gpgcheck=1` |
+| **RPM packages** | Run `./sign_all.sh` with `CRATERIA_GPG_NAME` set (see [docs/SIGNING.md](docs/SIGNING.md)) |
 | **Prune pool** | `./scripts/prune.sh` keeps latest N versions (default 3) |
 | **Version alignment** | Crate version in `trance-daemon` (and tags `vX.Y.Z`) should match published `trance_X.Y.Z-1_amd64.deb` |
 | **Plugins** | `trance-plugins-all` recommends all optional savers including **radar**; beams ships as hard depends of core `trance` |
