@@ -1,6 +1,6 @@
 [package]
 name = "crateria-packages"
-version = "3.2.5"
+version = "3.2.6"
 edition = "2024"
 description = "Repository maintenance tools for crateria package distribution"
 
@@ -11,6 +11,10 @@ path = "src/update.rs"
 [[bin]]
 name = "prune"
 path = "src/prune.rs"
+
+[[bin]]
+name = "sign"
+path = "src/sign.rs"
 
 [dependencies]
 semver = "1.0"
