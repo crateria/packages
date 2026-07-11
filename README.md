@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/crateria">
-    <img src="assets/crateria-header.jpg" alt="Crateria" width="800">
+    <img src="assets/crateria-header.jpg" alt="Crateria" width="100%">
   </a>
 </p>
 
