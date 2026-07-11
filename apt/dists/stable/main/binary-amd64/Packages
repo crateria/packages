@@ -1,7 +1,7 @@
 Package: morphball
 Version: 0.1.37-1
 Architecture: amd64
-Maintainer: UberMetroid
+Maintainer: crateria
 Installed-Size: 3573
 Depends: libc6 (>= 2.39)
 Filename: pool/main/morphball_0.1.37-1_amd64.deb
@@ -18,7 +18,7 @@ Description: [generated from Rust crate morphball]
 Package: morphball
 Version: 0.1.38-1
 Architecture: amd64
-Maintainer: UberMetroid
+Maintainer: crateria
 Installed-Size: 3576
 Filename: pool/main/morphball_0.1.38-1_amd64.deb
 Size: 934624
@@ -34,7 +34,7 @@ Description: [generated from Rust crate morphball]
 Package: trance
 Version: 0.3.37-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 2645
 Depends: dbus, fonts-dejavu-core, libc6, trance-plugin-beams
 Recommends: trance-plugins-all, trance-cli, trance-tui
@@ -52,7 +52,7 @@ Description: Background idle daemon and core package for trance screensavers
 Package: trance
 Version: 0.3.38-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 2734
 Depends: dbus, fonts-dejavu-core, libc6, trance-plugin-beams
 Recommends: trance-plugins-all, trance-cli, trance-tui
@@ -70,7 +70,7 @@ Description: Background idle daemon and core package for trance screensavers
 Package: trance
 Version: 0.3.39-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 2646
 Depends: dbus, fonts-dejavu-core, libc6, trance-plugin-beams
 Recommends: trance-plugins-all, trance-cli, trance-tui
@@ -88,7 +88,7 @@ Description: Background idle daemon and core package for trance screensavers
 Package: trance-applet
 Version: 0.3.34-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 12595
 Depends: libc6, trance
 Enhances: cosmic-session, cosmic-panel
@@ -99,7 +99,7 @@ SHA1: 9e5f076773542e4b8bddc6ac4c1e8176f7150dc2
 SHA256: eda9d4ace7a4081beba2c1f11a9e0d762b653037bdd85c4d947e4fa2056ad015
 Section: utils
 Priority: optional
-Homepage: https://github.com/UberMetroid/trance
+Homepage: https://github.com/crateria/trance
 Description: COSMIC Desktop panel applet for the trance screensavers
  Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
  Optional: install only on COSMIC (not needed for GNOME/KDE/Hyprland — use
@@ -108,7 +108,7 @@ Description: COSMIC Desktop panel applet for the trance screensavers
 Package: trance-applet
 Version: 0.3.35-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 12595
 Depends: libc6, trance
 Enhances: cosmic-session, cosmic-panel
@@ -119,7 +119,7 @@ SHA1: 4a30c4fac126cd7879360cc3f2291361776371e9
 SHA256: e051fe7bd0273f1ff13489ec7bd40222479e4c826a006ba6a0189860bad4efa0
 Section: utils
 Priority: optional
-Homepage: https://github.com/UberMetroid/trance
+Homepage: https://github.com/crateria/trance
 Description: COSMIC Desktop panel applet for the trance screensavers
  Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
  Optional: install only on COSMIC (not needed for GNOME/KDE/Hyprland — use
@@ -128,7 +128,7 @@ Description: COSMIC Desktop panel applet for the trance screensavers
 Package: trance-applet
 Version: 0.3.38-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 12595
 Depends: libc6, trance
 Enhances: cosmic-session, cosmic-panel
@@ -139,7 +139,7 @@ SHA1: 6f7319589d2ae7df9380ac740835e9ceb36c758a
 SHA256: ef1655545237958b2fd40766e55073d208f4a597bd4911964c5f82a869041f1e
 Section: utils
 Priority: optional
-Homepage: https://github.com/UberMetroid/trance
+Homepage: https://github.com/crateria/trance
 Description: COSMIC Desktop panel applet for the trance screensavers
  Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
  Optional: install only on COSMIC (not needed for GNOME/KDE/Hyprland — use
@@ -148,7 +148,7 @@ Description: COSMIC Desktop panel applet for the trance screensavers
 Package: trance-cli
 Version: 0.3.35-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 1920
 Depends: libc6, trance
 Filename: pool/main/trance-cli_0.3.35-1_amd64.deb
@@ -164,7 +164,7 @@ Description: Command-line interface for the trance screensaver daemon
 Package: trance-cli
 Version: 0.3.38-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 1920
 Depends: libc6, trance
 Filename: pool/main/trance-cli_0.3.38-1_amd64.deb
@@ -180,7 +180,7 @@ Description: Command-line interface for the trance screensaver daemon
 Package: trance-cli
 Version: 0.3.39-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 1890
 Depends: libc6, trance
 Filename: pool/main/trance-cli_0.3.39-1_amd64.deb
@@ -196,7 +196,7 @@ Description: Command-line interface for the trance screensaver daemon
 Package: trance-plugin-beams
 Version: 0.3.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 326
 Depends: libc6
 Filename: pool/main/trance-plugin-beams_0.3.0-1_amd64.deb
@@ -213,7 +213,7 @@ Description: Spotlight cones sweeping a rising dust starfield
 Package: trance-plugin-beams
 Version: 0.3.1-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 329
 Depends: libc6
 Filename: pool/main/trance-plugin-beams_0.3.1-1_amd64.deb
@@ -230,7 +230,7 @@ Description: Spotlight cones sweeping a rising dust starfield
 Package: trance-plugin-beams
 Version: 0.3.2-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 329
 Depends: libc6
 Filename: pool/main/trance-plugin-beams_0.3.2-1_amd64.deb
@@ -263,7 +263,7 @@ Description: bursts - retro terminal screensaver effect
 Package: trance-plugin-bursts
 Version: 0.3.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 344
 Depends: libc6
 Filename: pool/main/trance-plugin-bursts_0.3.0-1_amd64.deb
@@ -279,7 +279,7 @@ Description: City skyline fireworks particle show
 Package: trance-plugin-bursts
 Version: 0.3.1-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 347
 Depends: libc6
 Filename: pool/main/trance-plugin-bursts_0.3.1-1_amd64.deb
@@ -311,7 +311,7 @@ Description: chaos - retro terminal screensaver effect
 Package: trance-plugin-chaos
 Version: 0.3.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 331
 Depends: libc6
 Filename: pool/main/trance-plugin-chaos_0.3.0-1_amd64.deb
@@ -327,7 +327,7 @@ Description: Chromatic-aberration system logo glitch
 Package: trance-plugin-chaos
 Version: 0.3.1-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 333
 Depends: libc6
 Filename: pool/main/trance-plugin-chaos_0.3.1-1_amd64.deb
@@ -359,7 +359,7 @@ Description: cosmos - retro terminal screensaver effect
 Package: trance-plugin-cosmos
 Version: 0.3.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 349
 Depends: libc6
 Filename: pool/main/trance-plugin-cosmos_0.3.0-1_amd64.deb
@@ -376,7 +376,7 @@ Description: Accretion disk to collapsed singularity lifecycle
 Package: trance-plugin-cosmos
 Version: 0.3.1-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 350
 Depends: libc6
 Filename: pool/main/trance-plugin-cosmos_0.3.1-1_amd64.deb
@@ -409,7 +409,7 @@ Description: glyphs - retro terminal screensaver effect
 Package: trance-plugin-glyphs
 Version: 0.3.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 313
 Depends: libc6
 Filename: pool/main/trance-plugin-glyphs_0.3.0-1_amd64.deb
@@ -426,7 +426,7 @@ Description: Matrix-style rain with live system information
 Package: trance-plugin-glyphs
 Version: 0.3.1-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 314
 Depends: libc6
 Filename: pool/main/trance-plugin-glyphs_0.3.1-1_amd64.deb
@@ -459,7 +459,7 @@ Description: gnats - retro terminal screensaver effect
 Package: trance-plugin-gnats
 Version: 0.3.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 341
 Depends: libc6
 Filename: pool/main/trance-plugin-gnats_0.3.0-1_amd64.deb
@@ -475,7 +475,7 @@ Description: Predator-prey firefly swarm
 Package: trance-plugin-gnats
 Version: 0.3.1-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 343
 Depends: libc6
 Filename: pool/main/trance-plugin-gnats_0.3.1-1_amd64.deb
@@ -491,7 +491,7 @@ Description: Predator-prey firefly swarm
 Package: trance-plugin-loom
 Version: 0.1.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 312
 Depends: libc6
 Filename: pool/main/trance-plugin-loom_0.1.0-1_amd64.deb
@@ -524,7 +524,7 @@ Description: radar - retro tactical defense radar screensaver effect
 Package: trance-plugin-radar
 Version: 0.3.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 307
 Depends: libc6
 Filename: pool/main/trance-plugin-radar_0.3.0-1_amd64.deb
@@ -540,7 +540,7 @@ Description: Retro CRT tactical radar sweep
 Package: trance-plugin-radar
 Version: 0.3.1-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 318
 Depends: libc6
 Filename: pool/main/trance-plugin-radar_0.3.1-1_amd64.deb
@@ -556,7 +556,7 @@ Description: Retro CRT tactical radar sweep
 Package: trance-plugin-relay
 Version: 0.1.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 316
 Depends: libc6
 Filename: pool/main/trance-plugin-relay_0.1.0-1_amd64.deb
@@ -588,7 +588,7 @@ Description: storm - retro terminal screensaver effect
 Package: trance-plugin-storm
 Version: 0.3.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 365
 Depends: libc6
 Filename: pool/main/trance-plugin-storm_0.3.0-1_amd64.deb
@@ -605,7 +605,7 @@ Description: Forest rain, lightning, and wildlife silhouettes
 Package: trance-plugin-storm
 Version: 0.3.1-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 366
 Depends: libc6
 Filename: pool/main/trance-plugin-storm_0.3.1-1_amd64.deb
@@ -622,7 +622,7 @@ Description: Forest rain, lightning, and wildlife silhouettes
 Package: trance-plugin-tide
 Version: 0.1.0-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 316
 Depends: libc6
 Filename: pool/main/trance-plugin-tide_0.1.0-1_amd64.deb
@@ -638,7 +638,7 @@ Description: Living shoreline: rising tide, foam, and wet sand
 Package: trance-plugins-all
 Version: 0.3.35-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 4
 Depends: trance
 Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-radar, trance-plugin-storm
@@ -656,7 +656,7 @@ Description: Meta package that recommends all official trance screensaver plugin
 Package: trance-plugins-all
 Version: 0.3.38-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 4
 Depends: trance
 Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-radar, trance-plugin-storm
@@ -674,7 +674,7 @@ Description: Meta package that recommends all official trance screensaver plugin
 Package: trance-plugins-all
 Version: 0.3.39-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 4
 Depends: trance
 Recommends: trance-plugin-bursts, trance-plugin-chaos, trance-plugin-cosmos, trance-plugin-glyphs, trance-plugin-gnats, trance-plugin-radar, trance-plugin-storm, trance-plugin-tide, trance-plugin-loom, trance-plugin-relay
@@ -692,7 +692,7 @@ Description: Meta package that recommends all official trance screensaver plugin
 Package: trance-tui
 Version: 0.3.34-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 1640
 Depends: libc6, trance
 Filename: pool/main/trance-tui_0.3.34-1_amd64.deb
@@ -708,7 +708,7 @@ Description: TUI client for screensaver daemon configuration
 Package: trance-tui
 Version: 0.3.35-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 1640
 Depends: libc6, trance
 Filename: pool/main/trance-tui_0.3.35-1_amd64.deb
@@ -724,7 +724,7 @@ Description: TUI client for screensaver daemon configuration
 Package: trance-tui
 Version: 0.3.38-1
 Architecture: amd64
-Maintainer: UberMetroid <jerydleuck@gmail.com>
+Maintainer: crateria <jerydleuck@gmail.com>
 Installed-Size: 1640
 Depends: libc6, trance
 Filename: pool/main/trance-tui_0.3.38-1_amd64.deb
