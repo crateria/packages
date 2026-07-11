@@ -1,25 +1,22 @@
 # Crateria packages
 
 <p align="center">
-  <img src="assets/icon.png" width="128" height="128" alt="Crateria">
+  <img src="assets/icon.png" width="96" height="96" alt="Crateria">
 </p>
 
-<p align="center">
-  <strong>APT + DNF</strong> package repositories for
-  <a href="https://github.com/crateria">Crateria</a> desktop apps
-</p>
+APT and DNF repositories for Crateria desktop applications.
 
-Hosted on GitHub Pages: **[crateria.github.io/packages](https://crateria.github.io/packages/)**
+**Site:** [crateria.github.io/packages](https://crateria.github.io/packages/)
 
-Ships native builds for **trance**, **trance-plugins**, **morphball**, and related packages.
+Published packages include **trance**, **trance-plugins**, **morphball**, and
+related components. Artifacts are GPG-signed.
 
----
+## Install (users)
 
-## Client install
+### Debian / Ubuntu / Pop!_OS
 
-### Debian / Ubuntu / Pop!_OS (APT)
-
-Prefer a **dedicated keyring** + `signed-by` (do **not** drop the key into `/etc/apt/trusted.gpg.d/` unless you accept global trust):
+Use a dedicated keyring and `signed-by` (avoid dropping the key into
+`/etc/apt/trusted.gpg.d/` unless you intend global trust):
 
 ```bash
 sudo mkdir -p /etc/apt/keyrings
@@ -31,62 +28,47 @@ sudo apt update
 sudo apt install trance   # or: morphball
 ```
 
-Or install the committed `apt/crateria.list` after placing the keyring as above.
-
-### Fedora / RHEL (DNF)
+### Fedora / RHEL-compatible
 
 ```bash
 sudo curl -fsSL https://crateria.github.io/packages/rpm/crateria.repo \
   -o /etc/yum.repos.d/crateria.repo
-sudo dnf check-update
 sudo dnf install trance   # or: morphball
 ```
 
-The repo enables `gpgcheck=1` (each RPM is signed). Metadata is served over HTTPS; `repo_gpgcheck` is off so plain `dnf update` works without a stuck key prompt.
+RPM packages are signed (`gpgcheck=1`). Metadata is served over HTTPS.
 
----
+## Repository layout
 
-## Architecture
+| Path | Content |
+|------|---------|
+| `apt/` | Debian package pool and indexes |
+| `rpm/` | RPM pool and repodata |
+| `assets/` | Site icon |
+| `docs/SIGNING.md` | Maintainer signing procedure |
+| `src/` | Index update and prune tools |
 
-| | |
-|--|--|
-| Formats | APT (`.deb`) / DNF (`.rpm`) |
-| Hosting | GitHub Pages |
-| Targets | Debian, Ubuntu, Pop!_OS, Fedora, RHEL-compatible |
-| Brand | Icons from [crateria/brand](https://github.com/crateria/brand) |
+## Maintainer workflow
 
----
+| Step | Command / notes |
+|------|-----------------|
+| Build product packages | From product repos (`trance`, `trance-plugins`, `morphball`) |
+| Sign RPMs and refresh metadata | `CRATERIA_GPG_NAME=… ./sign_all.sh` (see [docs/SIGNING.md](docs/SIGNING.md)) |
+| Metadata only | `./update.sh` |
+| Prune old versions | `./scripts/prune.sh` (default: keep latest 3) |
 
-## Maintainer notes
+Do not publish unsigned indexes. Do not commit private keys.
 
-See also `apt/MAINTAINER.md` and [docs/SIGNING.md](docs/SIGNING.md).
-
-| Topic | Guidance |
-| :--- | :--- |
-| **Build packages** | From `trance/`: `./package.rs` (or `cargo deb` / `cargo generate-rpm` per crate); plugins from `trance-plugins/package.rs` |
-| **Index + sign** | From this repo: `./update.sh` — must have GPG secret key; do **not** publish unsigned indexes |
-| **RPM packages** | Run `./sign_all.sh` with `CRATERIA_GPG_NAME` set (see [docs/SIGNING.md](docs/SIGNING.md)) |
-| **Prune pool** | `./scripts/prune.sh` keeps latest N versions (default 3) |
-| **Version alignment** | Crate version in `trance-daemon` (and tags `vX.Y.Z`) should match published `trance_X.Y.Z-1_amd64.deb` |
-| **Plugins** | `trance-plugins-all` recommends all optional savers including **radar**; beams ships as hard depends of core `trance` |
-
-### Operational risks
-
-* Skipping GPG when the key is missing previously only **warned** — treat that as a failed release.
-* APT `Packages` index can list many historical versions; prune regularly to limit download of stale metadata.
-* Hosted debs lag git `main` until you rebuild and re-run `update.sh`.
-
----
+Further detail: `apt/MAINTAINER.md`.
 
 ## Links
 
-| | |
-|--|--|
-| Org | [crateria](https://github.com/crateria) |
-| Brand kit | [brand](https://github.com/crateria/brand) |
-| Products | [trance](https://github.com/crateria/trance) · [morphball](https://github.com/crateria/morphball) |
+| Resource | URL |
+|----------|-----|
+| Organization | [github.com/crateria](https://github.com/crateria) |
+| Brand kit | [crateria/brand](https://github.com/crateria/brand) |
 | Security | [SECURITY.md](SECURITY.md) |
 
 ## License
 
-[Apache-2.0](LICENSE) · Copyright 2026 [Crateria](https://github.com/crateria)
+[Apache-2.0](LICENSE) · Copyright 2026 Crateria
