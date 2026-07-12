@@ -4,38 +4,38 @@ Hash: SHA512
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Sun, 12 Jul 2026 02:25:58 +0000
+Date: Sun, 12 Jul 2026 05:21:26 +0000
 Description: crateria APT Repository (stable/main)
 Label: crateria
 Origin: crateria
 Suite: stable
 MD5Sum:
- c3c00d0d870006c8afcafeef72612e78              191 Release
- 0970a159fca0768deb1c8c807eceaf9a            36655 main/binary-amd64/Packages
- b63722415fedc6f5939041ec9d5d0fad             8307 main/binary-amd64/Packages.gz
+ 2de065a7e63e0166558e35c8985d1f27              191 Release
+ 8ab4ab7814f06edd1b3b178959febf1d            25716 main/binary-amd64/Packages
+ 68f9897347e386b44e50e06f6fe3fb05             6156 main/binary-amd64/Packages.gz
 SHA1:
- b1810cf097b31b5a398445a1acb144705bbd4b5b              191 Release
- 87d49dda405bbde7bd93ed163bbd4b69a0de53f4            36655 main/binary-amd64/Packages
- c1f64db30b54afe83867b747a15dec8cab0fe3eb             8307 main/binary-amd64/Packages.gz
+ 5182f12ce4abcc22212866abdb7a5407830b7a38              191 Release
+ de103bd9dcf2a8bc83e56c419730fa466e498cb3            25716 main/binary-amd64/Packages
+ 0e59ce696739334b508161c438355af595e7edc9             6156 main/binary-amd64/Packages.gz
 SHA256:
- bfdac546516bda4ff8802b830f8becf8b60e673f323bf51a76ca559b9c6f1d53              191 Release
- 568c3ca9e565c67d3e83f1879d3ebef49f7d0cc67c0209d72f24c0ec7b1eb8e5            36655 main/binary-amd64/Packages
- 7ca43eaea4c75986bef42ee6580c5165c47ecebfbe747454f7aabbcec4723a54             8307 main/binary-amd64/Packages.gz
+ 9f7ddea2e8135a41ba9ae52bd4aaae33c1d92c9244a5876d533c241fb6a0d53d              191 Release
+ 9049ff30e3aa945cccf2447b97df8a2ba801da2ced47bc6a24a3dde485ef44b4            25716 main/binary-amd64/Packages
+ 1486371b167d75436722e45c414d27883e26c32c37bcfe8999a0b66673d53877             6156 main/binary-amd64/Packages.gz
 SHA512:
- 6eea15186c4067d0f01e5f3fc3b1980cb1b832a6ef1617693600b6a63bc4cd121b2ad88bf961ce35c22de8f918224c46e729b2c7b40c4544186de0aa5881d0a5              191 Release
- 023119582d46aaf6bb90aa51ef8f426f27d82056679f09cc37465008df85f757c75dd2ea28de63aa8c59700180641c92652ab034ccfee8aee67b700172b5852e            36655 main/binary-amd64/Packages
- 93a5c44121de9b3f026375a85940ce68d0c0317a530410ccd3345304846ceab5cfd5fb018dce14bf5b9061d3ad7e08437e931455370b28018e6329d8f6604af0             8307 main/binary-amd64/Packages.gz
+ de53a0dec102d00be02b2f8ba8f903b21255fa799a68818c9a1558919ba2485dca3b8d855a6fa21d5e4e44ff2c5808c47ff7d4748f8f5d07aa7e61fc20ac9d6c              191 Release
+ e85908dcd7d07658aecbee82cd293949c2100eeb1d5ed071baf3d91ce6ef6858d3116985597c46c156bf3d002b5ffd78651192011e1929a5f22120bd1821f3d1            25716 main/binary-amd64/Packages
+ b3825c6bf175fdff929750978bb819b8b7bc45e2ad932b6aaa0851b46b938d4ec096d20428068bbbaffd88db9fa4b8fe3da8d1c867ecacd90a01dfc5fe76af1a             6156 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpS+zYACgkQ+9j8UseB
-fdJVEgv+JGf45KZ13pjiZU10CPprdpeCNq2qcKQr13G6I3zoLYFBTBD1Q8fatNbR
-9W+px5i/0xY1q/C1CzUfCScA1C/CcIHRoc+fTWq/eTRCBTGVBYNUOFmwXnRGLJ7y
-y2YSUj3Hut5BrI2DHPHZ/EJB6X2y75Trnd5BxK9NOF0ad8C/VFkzZVTvyTDpTnMt
-gW/QSDUiTrqMbvaDUedyAgxmg4KaYBaMRFE/gH8EY9CBmD2/0HLD7Kg4SjJx7aek
-Ol13oG6dBV7C1fLH0q1hmdhQK7tzrYBWX6fJl4PHCMThWsy6lPTpo4mN7TEZfbrO
-488TCUsxQGeB4ebaJ/Wkt5u9y5C6u63hdpbiyGvPITQkvl4lEMKCuNO9HlwAbhbC
-B9v4NPi0PGPSf4PYCFbZZvTVjvMvk0aTjpaLK7QJJ3ZykOiYQyweENAsp3QMbhyQ
-QtinrOfJHUB0bo5xDlGi9blfaBkrX4Q3FyoqJlzHmvDhsZrKi3Bpimca63E9InNp
-t+6GxR0i
-=lIZH
+iQHJBAEBCgAzFiEEVJ5zybySKceG5Tji+9j8UseBfdIFAmpTJFYVHGplcnlkbGV1
+Y2tAZ21haWwuY29tAAoJEPvY/FLHgX3S9HQL/ijYExMLQKwWKi9RgPHRMNbZEr4M
+a1aC/N2aL5yD8wZRFnE5iL7+RR7oHY1OT90xSkmpRP51OCXlqVAnBy61uLXVH1le
+18oA8hKoOlMVFE/MT/+N3ROBZv7QmPED6Q08iZR3CboZL/bW4qfE1DshKMXOqWGE
+FyVUI60RpDdYem42kIWMyYE4yVFmvRurJN/w5RpD+aG0JjHaodbdUNzkc7KSZDfI
+0PzzoqGK5xthDLSW7Vvtew/z1/9ML8xw0bPVSFW/47fcMhsRCa/+LCf9LOyh7wos
+bSXHcAGi0LhsgM+dKkpmguwEf27ASArZmImiS66S6a4+h+b/41FIuts83HWWots2
+qVD01WUi9pGlHBEER6A2DUKepUg/cTttLp7vv4rttRsftugwNPjUIqGgplL/Q2KL
+gG0JqFemypEVRQfPaObErk/8e7V0yMwdP14AK5v4NbDXsUSJcopmjXH404ju58CI
+iufmCQx79BVGMaKb/J9IY5Er7WfbSbl0L9CjQA==
+=J2/A
 -----END PGP SIGNATURE-----
