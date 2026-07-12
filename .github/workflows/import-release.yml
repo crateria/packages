@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   import:
-    name: Import & Index Release
+    name: 'Import & Index Release'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout packages repository
