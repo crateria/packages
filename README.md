@@ -72,3 +72,8 @@ Signing env (maintainers): `CRATERIA_GPG_NAME` (required), optional `CRATERIA_GP
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
+
+## Product metapackages
+
+See [metapackages/](metapackages/) for COSMIC (and future app) install units.
+Example: `idlescreen-cosmic` depends on daemon, applet, and all official savers.
