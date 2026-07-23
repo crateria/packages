@@ -3,7 +3,8 @@
 [![CI](https://github.com/crateria/packages/actions/workflows/ci.yml/badge.svg)](https://github.com/crateria/packages/actions/workflows/ci.yml)
 [![Pages](https://img.shields.io/badge/index-crateria.github.io%2Fpackages-orange)](https://crateria.github.io/packages/)
 
-APT (`.deb`) and DNF (`.rpm`) package repositories for **Crateria** desktop applications.
+APT (`.deb`) and DNF (`.rpm`) package repositories for **Crateria** desktop applications
+(currently the Trance screensaver family).
 
 Public index: **[crateria.github.io/packages](https://crateria.github.io/packages/)**  
 Brand: [crateria/brand](https://github.com/crateria/brand)
@@ -19,7 +20,7 @@ sudo curl -fsSL https://crateria.github.io/packages/apt/crateria-keyring.gpg \
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/crateria.gpg] https://crateria.github.io/packages/apt stable main" \
   | sudo tee /etc/apt/sources.list.d/crateria.list
 sudo apt update
-sudo apt install trance   # or: morphball
+sudo apt install trance
 ```
 
 ### Fedora
@@ -27,17 +28,17 @@ sudo apt install trance   # or: morphball
 ```bash
 sudo curl -fsSL https://crateria.github.io/packages/rpm/crateria.repo \
   -o /etc/yum.repos.d/crateria.repo
-sudo dnf install trance   # or: morphball
+sudo dnf install trance
 ```
+
+Optional plugin packages: `trance-plugin-*`, meta package `trance-plugins-all`.
 
 ## Release → index pipeline
 
-1. Product repo (e.g. `trance`) tags `vX.Y.Z` and publishes release assets (`.deb` / `.rpm`).  
-2. Product **Release** workflow may send `repository_dispatch` type `new_release` to this repo  
-   (secret: `CRATERIA_PACKAGES_DISPATCH_TOKEN` on the product repo).  
-3. This repo’s **Import Product Release** workflow downloads assets, prunes old versions, signs, rebuilds indexes, and deploys Pages.
-
-Maintainers: keep `GPG_PRIVATE_KEY` (and related) secrets configured here; keep dispatch token on product repos that publish packages.
+1. Product repo (e.g. `trance`) tags `vX.Y.Z` and publishes release assets (`.deb` / `.rpm`).
+2. Product **Release** workflow may send `repository_dispatch` type `new_release` here
+   (secret: `CRATERIA_PACKAGES_DISPATCH_TOKEN` on the product repo).
+3. **Import Product Release** downloads assets, prunes old versions, signs, rebuilds indexes, deploys Pages.
 
 ## Build tooling from source
 
