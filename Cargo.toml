@@ -1,6 +1,6 @@
 [package]
 name = "crateria-packages"
-version = "3.2.28"
+version = "3.2.29"
 edition = "2024"
 description = "Repository maintenance tools for crateria package distribution"
 license = "Apache-2.0"
