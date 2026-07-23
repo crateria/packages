@@ -11,7 +11,7 @@ Supported formats:
 
 ```bash
 # 1. Download the repository configuration
-sudo curl -fsSL https://crateria.github.io/packages/rpm/crateria.repo -o /etc/yum.repos.d/crateria.repo
+sudo curl -fsSL https://idlescreen.github.io/packages/rpm/crateria.repo -o /etc/yum.repos.d/crateria.repo
 
 # 2. Refresh the package database
 sudo dnf check-update

@@ -30,7 +30,7 @@ SHA1: 9111f62a8166fc56fbe921f7e061004416185921
 SHA256: a257c2b5b9536272724893109ecfae6340f0c488b1392cf4da9f016e83207031
 Section: utils
 Priority: optional
-Homepage: https://github.com/crateria/trance
+Homepage: https://github.com/idlescreen/trance
 Description: COSMIC Desktop panel applet for the trance screensavers
  Native System76 COSMIC Desktop panel applet for the trance screensaver daemon.
  Optional: install only on COSMIC (not needed for GNOME/KDE/Hyprland — use
