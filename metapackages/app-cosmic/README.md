@@ -11,7 +11,7 @@ sudo apt install app-cosmic
 app-cosmic
   Requires:   idlescreen, idlescreen-savers
   Ships:      COSMIC panel applet (from idlescreen/app-cosmic)
-  Recommends: idlescreen-cli, idlescreen-tui
+  Recommends: idlescreen-cli, app-tui
 ```
 
 The installable RPM/DEB is built in [app-cosmic](https://github.com/idlescreen/app-cosmic)

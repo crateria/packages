@@ -9,7 +9,7 @@ Signed APT (`.deb`) and DNF (`.rpm`) repositories for **IdleScreen**.
 | | |
 |---|---|
 | Public index | [idlescreen.github.io/packages](https://idlescreen.github.io/packages/) |
-| Brand | [idlescreen/brand](https://github.com/idlescreen/idle-brand) |
+| Brand | [idlescreen/brand](https://github.com/idlescreen/brand) |
 | Host | `idlescreen.github.io` |
 | Org | [idlescreen](https://github.com/idlescreen) |
 

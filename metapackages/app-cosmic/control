@@ -5,7 +5,7 @@ Priority: optional
 Architecture: all
 Maintainer: IdleScreen <jerydleuck@gmail.com>
 Depends: idlescreen, idlescreen-savers
-Recommends: idlescreen-cli, idlescreen-tui
+Recommends: idlescreen-cli, app-tui
 Provides: idlescreen-applet, idlescreen-cosmic, trance-applet
 Description: IdleScreen product for COSMIC Desktop
  Installs the IdleScreen daemon (idlescreen / idle-core), all official
