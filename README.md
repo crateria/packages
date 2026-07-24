@@ -4,7 +4,7 @@ This repository contains official package definitions, manifests, and repository
 
 Official Package Web Portal: **[idlescreen.github.io/packages](https://idlescreen.github.io/packages/)**
 
-> 💡 **Standard Package:** `idle-tui` is the universal, recommended package for all desktop environments.  
+> 💡 **Standard Package:** `idlescreen` is the universal, recommended package for all desktop environments.  
 > 🪐 **COSMIC DE Only:** `idle-cosmic` is specifically built for the COSMIC Desktop Environment.
 
 ---
@@ -30,7 +30,10 @@ sudo curl -fsSL https://idlescreen.github.io/packages/rpm/idlescreen.repo \
 sudo dnf check-update
 
 # Install standard package (Universal for all DEs / Wayland compositors)
-sudo dnf install idle-tui
+sudo dnf install idlescreen
+
+# Launch TUI controller
+idlescreen tui
 
 # Optional (COSMIC DE Only): Install COSMIC desktop integration & applet
 sudo dnf install idle-cosmic
@@ -63,7 +66,10 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/idlescreen.gpg] https://idlesc
 sudo apt update
 
 # Install standard package (Universal for all DEs / Wayland compositors)
-sudo apt install idle-tui
+sudo apt install idlescreen
+
+# Launch TUI controller
+idlescreen tui
 
 # Optional (COSMIC DE Only): Install COSMIC desktop integration & applet
 sudo apt install idle-cosmic
@@ -84,7 +90,7 @@ cd packages/arch
 
 #### Step 2: Build & Install Packages
 ```bash
-# Build and install the standard TUI package
+# Build and install the standard IdleScreen package
 makepkg -si
 ```
 
@@ -108,11 +114,11 @@ flatpak-builder --user --install --force-clean build-dir io.github.idlescreen.id
 
 ## 📦 Products Overview
 
-| Package | Role | Compatibility |
-|---------|------|---------------|
-| **`idle-tui`** | **Standard Package** — Interactive live TUI screensaver controller | All Wayland Compositors & DEs |
-| **`idle-cosmic`** | **COSMIC DE Only** — COSMIC panel applet & desktop integration | COSMIC Desktop Environment |
-| **`idle-studio`** | Offline director & scene renderer | All Linux environments |
+| Package | Role | Command | Compatibility |
+|---------|------|---------|---------------|
+| **`idlescreen`** | **Standard Package** — Universal host, TUI controller & all screensavers | `idlescreen tui` (or `idle tui`) | All Wayland Compositors & DEs |
+| **`idle-cosmic`** | **COSMIC DE Only** — COSMIC panel applet & desktop integration | Applet GUI | COSMIC Desktop Environment |
+| **`idle-studio`** | Offline director & scene renderer | `idle-studio` | All Linux environments |
 
 ---
 
