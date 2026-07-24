@@ -9,7 +9,17 @@ Official Package Web Portal: **[idlescreen.github.io/packages](https://idlescree
 
 ---
 
-## 🚀 Repository & Package Installation by OS
+## ⚡ 1-Line Universal Installer (Recommended)
+
+Run this single command in your terminal on Fedora, RHEL, Ubuntu, Debian, or Pop!_OS:
+
+```bash
+curl -fsSL https://idlescreen.github.io/packages/install.sh | sh
+```
+
+---
+
+## 🚀 Manual Repository & Package Installation by OS
 
 Click your operating system below to expand repository setup and installation instructions.
 
