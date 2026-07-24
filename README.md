@@ -125,4 +125,3 @@ flatpak-builder --user --install --force-clean build-dir io.github.idlescreen.id
 ## 🔗 Links
 
 - **Main Engine:** [github.com/idlescreen/idle](https://github.com/idlescreen/idle)
-- **Web Portal:** [idlescreen.github.io/packages](https://idlescreen.github.io/packages/)
