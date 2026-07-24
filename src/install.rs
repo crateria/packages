@@ -57,10 +57,24 @@ fn main() {
         let _ = std::fs::create_dir_all(format!("{home}/.config/idlescreen"));
     }
 
-    // Enable systemd user unit
+    // Enable systemd user unit silently & clear transient flags
+    let _ = Command::new("systemctl")
+        .args(["--user", "daemon-reload"])
+        .output();
+
+    let _ = Command::new("systemctl")
+        .args(["--user", "reset-failed", "idle-daemon.service"])
+        .output();
+
     let _ = Command::new("systemctl")
         .args(["--user", "enable", "--now", "idle-daemon.service"])
-        .status();
+        .output();
+
+    let daemon_active = Command::new("systemctl")
+        .args(["--user", "is-active", "idle-daemon.service"])
+        .output()
+        .map(|o| String::from_utf8_lossy(&o.stdout).trim() == "active")
+        .unwrap_or(false);
 
     // Check COSMIC DE
     let desktop = env::var("XDG_CURRENT_DESKTOP").unwrap_or_default();
@@ -71,7 +85,11 @@ fn main() {
     println!(" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
     println!(" High-Performance GPU & Terminal Screensavers for Linux");
     println!();
-    println!(" 🟢 Background Daemon: Active & Enabled (idle-daemon.service)");
+    if daemon_active {
+        println!(" 🟢 Background Daemon: Active & Enabled (idle-daemon.service)");
+    } else {
+        println!(" 🟡 Background Daemon: Configured (idle-daemon.service)");
+    }
     if is_cosmic {
         println!(" 📱 Desktop Environment: COSMIC DE Detected (Panel Applet Installed)");
     }
