@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IdleScreen packages</title>
+    <title>IdleScreen Packages & Repositories</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
             --card-border: rgba(255, 255, 255, 0.05);
             --text-primary: #f3f4f6;
             --text-secondary: #9ca3af;
-            --accent-primary: #ff8541; /* IdleScreen accent */
+            --accent-primary: #ff8541;
             --accent-glow: rgba(255, 133, 65, 0.18);
             --accent-glow-strong: rgba(255, 133, 65, 0.45);
             --font-main: 'Outfit', sans-serif;
@@ -41,12 +41,11 @@
             position: relative;
         }
 
-        /* Background accent */
         body::before {
             content: '';
             position: absolute;
-            width: 500px;
-            height: 500px;
+            width: 600px;
+            height: 600px;
             background: radial-gradient(circle, var(--accent-glow) 0%, rgba(11, 13, 15, 0) 70%);
             top: 50%;
             left: 50%;
@@ -56,7 +55,7 @@
         }
 
         .container {
-            max-width: 600px;
+            max-width: 680px;
             width: 100%;
             background: var(--card-bg);
             border: 1px solid var(--card-border);
@@ -68,13 +67,12 @@
             text-align: center;
             z-index: 1;
             position: relative;
-            
         }
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(10px);
+                transform: translateY(8px);
             }
             to {
                 opacity: 1;
@@ -100,33 +98,34 @@
         }
 
         .subtitle {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: var(--text-secondary);
             font-weight: 400;
             margin-bottom: 2rem;
             line-height: 1.6;
         }
 
-        /* Tabs styling */
         .tabs {
             display: flex;
             background: rgba(10, 12, 14, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.03);
             border-radius: 12px;
             padding: 0.3rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             gap: 0.2rem;
+            flex-wrap: wrap;
         }
 
         .tab-btn {
             flex: 1;
+            min-width: 100px;
             background: transparent;
             border: none;
             color: var(--text-secondary);
             font-family: var(--font-main);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 500;
-            padding: 0.6rem 1rem;
+            padding: 0.6rem 0.8rem;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -145,7 +144,7 @@
 
         .tab-content {
             display: none;
-            animation: fadeIn 0.4s ease forwards;
+            animation: fadeIn 0.3s ease forwards;
         }
 
         .tab-content.active {
@@ -162,7 +161,6 @@
             text-align: left;
         }
 
-        /* Step-by-step layout styles */
         .steps {
             text-align: left;
             margin-bottom: 1rem;
@@ -191,30 +189,29 @@
         .installer-box {
             background: rgba(10, 12, 14, 0.6);
             border: 1px solid rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
-            padding: 1.25rem 1.5rem;
+            border-radius: 14px;
+            padding: 1rem 1.25rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
             position: relative;
             transition: border-color 0.3s ease;
-            margin-bottom: 0;
         }
 
         .installer-box:hover {
-            border-color: rgba(99, 102, 241, 0.3);
+            border-color: rgba(255, 133, 65, 0.3);
         }
 
         .command {
             font-family: var(--font-mono);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #e2e8f0;
             text-align: left;
             overflow-x: auto;
             white-space: nowrap;
             width: 100%;
-            scrollbar-width: none; /* Hide scrollbar for clean layout */
+            scrollbar-width: none;
         }
         .command::-webkit-scrollbar {
             display: none;
@@ -224,10 +221,10 @@
             background: var(--accent-primary);
             color: white;
             border: none;
-            border-radius: 10px;
-            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            padding: 0.5rem 0.9rem;
             font-family: var(--font-main);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 500;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -238,7 +235,6 @@
         .copy-btn:hover {
             background: #e06a30;
             transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(99, 102, 241, 0.3);
         }
 
         .copy-btn:active {
@@ -246,7 +242,7 @@
         }
 
         .footer {
-            margin-top: 2rem;
+            margin-top: 2.5rem;
             font-size: 0.85rem;
             color: var(--text-secondary);
         }
@@ -263,10 +259,9 @@
             text-decoration: underline;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 480px) {
             .container {
-                padding: 2.5rem 1.5rem;
+                padding: 2rem 1.25rem;
             }
             .installer-box {
                 flex-direction: column;
@@ -283,39 +278,42 @@
     <div class="container">
         <div class="logo-area" style="flex-direction: column; gap: 0.75rem; width: 100%;">
             <img src="assets/crateria-header.jpg" alt="IdleScreen" style="width:100%;max-width:720px;border-radius:10px;display:block;">
-            <span style="font-size:0.95rem;font-weight:500;color:var(--text-secondary);letter-spacing:0.04em">packages</span>
+            <span style="font-size:0.95rem;font-weight:500;color:var(--text-secondary);letter-spacing:0.04em">Package Repositories & Installation</span>
         </div>
-        <p class="subtitle">Signed APT and DNF repositories for IdleScreen desktop applications.</p>
+        <p class="subtitle">Step-by-step instructions to install the IdleScreen repository & packages for your OS.</p>
         
         <div class="tabs">
-            <button class="tab-btn active" id="apt-tab" onclick="switchTab('apt')">Debian / Ubuntu (APT)</button>
-            <button class="tab-btn" id="dnf-tab" onclick="switchTab('dnf')">Fedora (DNF)</button>
+            <button class="tab-btn active" id="apt-tab" onclick="switchTab('apt')">Debian / Ubuntu</button>
+            <button class="tab-btn" id="dnf-tab" onclick="switchTab('dnf')">Fedora / RHEL</button>
+            <button class="tab-btn" id="arch-tab" onclick="switchTab('arch')">Arch Linux</button>
+            <button class="tab-btn" id="nix-tab" onclick="switchTab('nix')">Nix / NixOS</button>
+            <button class="tab-btn" id="flatpak-tab" onclick="switchTab('flatpak')">Flatpak</button>
         </div>
 
         <!-- APT Content -->
         <div id="apt-content" class="tab-content active">
-            <div class="section-title">APT Repository Setup</div>
+            <div class="section-title">Debian / Ubuntu / Pop!_OS Setup</div>
             <div class="steps">
                 <div class="step-item">
-                    <div class="step-label">Step 1: Download GPG Keyring</div>
+                    <div class="step-label">Step 1: Install GPG Keyring & Add APT Repository</div>
                     <div class="installer-box">
-                        <div class="command" id="apt1Cmd">sudo mkdir -p /etc/apt/keyrings &amp;&amp; sudo curl -fsSL https://idlescreen.github.io/packages/apt/idlescreen-keyring.gpg -o /etc/apt/keyrings/idlescreen.gpg</div>
+                        <div class="command" id="apt1Cmd">sudo mkdir -p /etc/apt/keyrings && sudo curl -fsSL https://idlescreen.github.io/packages/apt/idlescreen-keyring.gpg -o /etc/apt/keyrings/idlescreen.gpg && echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/idlescreen.gpg] https://idlescreen.github.io/packages/apt stable main" | sudo tee /etc/apt/sources.list.d/idlescreen.list</div>
                         <button class="copy-btn" onclick="copyCommand('apt1Cmd', this)">Copy</button>
                     </div>
                 </div>
 
                 <div class="step-item">
-                    <div class="step-label">Step 2: Add APT Source</div>
+                    <div class="step-label">Step 2: Update Package Database</div>
                     <div class="installer-box">
-                        <div class="command" id="apt2Cmd">echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/idlescreen.gpg] https://idlescreen.github.io/packages/apt stable main" | sudo tee /etc/apt/sources.list.d/idlescreen.list</div>
+                        <div class="command" id="apt2Cmd">sudo apt update</div>
                         <button class="copy-btn" onclick="copyCommand('apt2Cmd', this)">Copy</button>
                     </div>
                 </div>
 
                 <div class="step-item">
-                    <div class="step-label">Step 3: Update Package Index</div>
+                    <div class="step-label">Step 3: Install Package</div>
                     <div class="installer-box">
-                        <div class="command" id="apt3Cmd">sudo apt update</div>
+                        <div class="command" id="apt3Cmd">sudo apt install idle-cosmic</div>
                         <button class="copy-btn" onclick="copyCommand('apt3Cmd', this)">Copy</button>
                     </div>
                 </div>
@@ -324,10 +322,10 @@
 
         <!-- DNF Content -->
         <div id="dnf-content" class="tab-content">
-            <div class="section-title">DNF Repository Setup</div>
+            <div class="section-title">Fedora / RHEL Setup</div>
             <div class="steps">
                 <div class="step-item">
-                    <div class="step-label">Step 1: Download Repository Configuration</div>
+                    <div class="step-label">Step 1: Install DNF Repository File</div>
                     <div class="installer-box">
                         <div class="command" id="dnf1Cmd">sudo curl -fsSL https://idlescreen.github.io/packages/rpm/idlescreen.repo -o /etc/yum.repos.d/idlescreen.repo</div>
                         <button class="copy-btn" onclick="copyCommand('dnf1Cmd', this)">Copy</button>
@@ -335,10 +333,76 @@
                 </div>
 
                 <div class="step-item">
-                    <div class="step-label">Step 2: Refresh Package Database</div>
+                    <div class="step-label">Step 2: Refresh DNF Metadata & Install</div>
                     <div class="installer-box">
-                        <div class="command" id="dnf2Cmd">sudo dnf check-update</div>
+                        <div class="command" id="dnf2Cmd">sudo dnf check-update && sudo dnf install idle-cosmic</div>
                         <button class="copy-btn" onclick="copyCommand('dnf2Cmd', this)">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arch Content -->
+        <div id="arch-content" class="tab-content">
+            <div class="section-title">Arch Linux Setup</div>
+            <div class="steps">
+                <div class="step-item">
+                    <div class="step-label">Step 1: Clone Package Manifests</div>
+                    <div class="installer-box">
+                        <div class="command" id="arch1Cmd">git clone https://github.com/idlescreen/packages.git && cd packages/arch</div>
+                        <button class="copy-btn" onclick="copyCommand('arch1Cmd', this)">Copy</button>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-label">Step 2: Build & Install</div>
+                    <div class="installer-box">
+                        <div class="command" id="arch2Cmd">makepkg -si</div>
+                        <button class="copy-btn" onclick="copyCommand('arch2Cmd', this)">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nix Content -->
+        <div id="nix-content" class="tab-content">
+            <div class="section-title">Nix / NixOS Setup</div>
+            <div class="steps">
+                <div class="step-item">
+                    <div class="step-label">Option A: Run via Nix Flakes</div>
+                    <div class="installer-box">
+                        <div class="command" id="nix1Cmd">nix run github:idlescreen/packages#idle-cosmic</div>
+                        <button class="copy-btn" onclick="copyCommand('nix1Cmd', this)">Copy</button>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-label">Option B: Build Expression</div>
+                    <div class="installer-box">
+                        <div class="command" id="nix2Cmd">nix-build https://github.com/idlescreen/packages/archive/main.tar.gz -A idle-cosmic</div>
+                        <button class="copy-btn" onclick="copyCommand('nix2Cmd', this)">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flatpak Content -->
+        <div id="flatpak-content" class="tab-content">
+            <div class="section-title">Flatpak (Cross-Distribution)</div>
+            <div class="steps">
+                <div class="step-item">
+                    <div class="step-label">Step 1: Clone & Build Manifest</div>
+                    <div class="installer-box">
+                        <div class="command" id="flat1Cmd">git clone https://github.com/idlescreen/packages.git && cd packages/flatpak</div>
+                        <button class="copy-btn" onclick="copyCommand('flat1Cmd', this)">Copy</button>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-label">Step 2: Install Flatpak Package</div>
+                    <div class="installer-box">
+                        <div class="command" id="flat2Cmd">flatpak-builder --user --install --force-clean build-dir io.github.idlescreen.idle.yaml</div>
+                        <button class="copy-btn" onclick="copyCommand('flat2Cmd', this)">Copy</button>
                     </div>
                 </div>
             </div>
@@ -353,18 +417,11 @@
 
     <script>
         function switchTab(type) {
-            // Deactivate all
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
             
-            // Activate target
-            if (type === 'apt') {
-                document.getElementById('apt-tab').classList.add('active');
-                document.getElementById('apt-content').classList.add('active');
-            } else {
-                document.getElementById('dnf-tab').classList.add('active');
-                document.getElementById('dnf-content').classList.add('active');
-            }
+            document.getElementById(type + '-tab').classList.add('active');
+            document.getElementById(type + '-content').classList.add('active');
         }
 
         function copyCommand(id, btn) {
@@ -372,13 +429,13 @@
             navigator.clipboard.writeText(cmdText).then(() => {
                 const originalText = btn.textContent;
                 btn.textContent = 'Copied!';
-                btn.style.background = '#10b981'; // Green accent on success
+                btn.style.background = '#10b981';
                 btn.style.boxShadow = '0 4px 12px rgba(16, 185, 129, 0.2)';
                 
                 setTimeout(() => {
                     btn.textContent = originalText;
                     btn.style.background = 'var(--accent-primary)';
-                    btn.style.boxShadow = '0 4px 12px rgba(99, 102, 241, 0.2)';
+                    btn.style.boxShadow = '0 4px 12px rgba(255, 133, 65, 0.25)';
                 }, 2000);
             }).catch(err => {
                 console.error('Could not copy text: ', err);
