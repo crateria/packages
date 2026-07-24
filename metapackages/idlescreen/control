@@ -2,6 +2,6 @@ Package: idlescreen
 Version: 2.3.2
 Architecture: all
 Depends: idle-tui, idle-daemon, idle-savers, idle-cli
-Recommends: idle-studio
+Recommends: idle-cosmic, idle-studio
 Description: IdleScreen standard product package
  Main package for IdleScreen — installs universal TUI host, background daemon, and screensavers.
