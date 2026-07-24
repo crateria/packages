@@ -1,9 +1,9 @@
 //! Prune old package versions from apt and rpm pools.
 // SPDX-License-Identifier: Apache-2.0
 
-use crateria_packages::package_parse::{parse_deb_filename, parse_rpm_filename};
-use crateria_packages::paths::{is_under_base, safe_join_under};
-use crateria_packages::prune_core::{PackageFile, group_by_name, select_to_remove};
+use idlescreen_packages::package_parse::{parse_deb_filename, parse_rpm_filename};
+use idlescreen_packages::paths::{is_under_base, safe_join_under};
+use idlescreen_packages::prune_core::{PackageFile, group_by_name, select_to_remove};
 use std::env;
 use std::fs;
 use std::path::Path;

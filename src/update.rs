@@ -1,8 +1,8 @@
 //! Rebuild APT and RPM repository indexes and sign metadata.
 // SPDX-License-Identifier: Apache-2.0
 
-use crateria_packages::sign_macros::{resolve_gpg_bin, resolve_signing_key};
-use crateria_packages::sweep::sweep_loose_packages;
+use idlescreen_packages::sign_macros::{resolve_gpg_bin, resolve_signing_key};
+use idlescreen_packages::sweep::sweep_loose_packages;
 use std::fs;
 use std::path::Path;
 use std::process::Command;

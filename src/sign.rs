@@ -1,8 +1,8 @@
 //! Sign all RPMs in the pool and refresh repository metadata.
 // SPDX-License-Identifier: Apache-2.0
 
-use crateria_packages::paths::{is_rpm_path, safe_join_under};
-use crateria_packages::sign_macros::{build_rpmmacros, gpg_name_is_valid, resolve_gpg_bin};
+use idlescreen_packages::paths::{is_rpm_path, safe_join_under};
+use idlescreen_packages::sign_macros::{build_rpmmacros, gpg_name_is_valid, resolve_gpg_bin};
 use std::env;
 use std::fs;
 use std::path::{Path, PathBuf};
