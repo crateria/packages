@@ -98,6 +98,26 @@ Description: Chromatic-aberration system logo glitch
  Chromatic-aberration system logo glitch. Official IdleScreen (Trance)
  screensaver plugin.
 
+Package: idle-saver-cosmos
+Version: 2.0.2-1
+Architecture: amd64
+Maintainer: idlescreen <jerydleuck@gmail.com>
+Installed-Size: 416
+Depends: libc6
+Conflicts: trance-plugin-cosmos (<< 2.0.0)
+Replaces: trance-plugin-cosmos
+Provides: trance-plugin-cosmos
+Filename: pool/main/idle-saver-cosmos_2.0.2-1_amd64.deb
+Size: 185700
+MD5sum: bf2b33691f07ee849363c8993c17bfea
+SHA1: 3c9bde9df8621f82c8993ac6c444a648fb6e90a4
+SHA256: 913491d5d520f1e801c2c77582fa1b8f5b82b9adeb0b5dcddacbf751d43ea417
+Section: utils
+Priority: optional
+Description: Accretion disk to collapsed singularity lifecycle
+ Accretion disk to collapsed singularity lifecycle. Official IdleScreen (Trance)
+ screensaver plugin.
+
 Package: idle-savers
 Version: 2.3.1-1
 Architecture: amd64
