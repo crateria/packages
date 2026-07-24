@@ -122,16 +122,6 @@ flatpak-builder --user --install --force-clean build-dir io.github.idlescreen.id
 
 ---
 
-## 📦 Products Overview
-
-| Package | Role | Command | Compatibility |
-|---------|------|---------|---------------|
-| **`idlescreen`** | **Standard Package** — Universal host, TUI controller & all screensavers | `idlescreen tui` (or `idle tui`) | All Wayland Compositors & DEs |
-| **`idle-cosmic`** | **COSMIC DE Only** — COSMIC panel applet & desktop integration | Applet GUI | COSMIC Desktop Environment |
-| **`idle-studio`** | Offline director & scene renderer | `idle-studio` | All Linux environments |
-
----
-
 ## 🔗 Links
 
 - **Main Engine:** [github.com/idlescreen/idle](https://github.com/idlescreen/idle)
