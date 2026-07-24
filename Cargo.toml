@@ -1,12 +1,12 @@
 [package]
-name = "crateria-packages"
+name = "idlescreen-packages"
 version = "3.2.31"
 edition = "2024"
 description = "Repository maintenance tools for IdleScreen package distribution"
 license = "Apache-2.0"
 
 [lib]
-name = "crateria_packages"
+name = "idlescreen_packages"
 path = "src/lib.rs"
 
 [[bin]]
