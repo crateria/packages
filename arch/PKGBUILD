@@ -1,0 +1,26 @@
+# PKGBUILD for Arch Linux / AUR
+pkgname=idle-cosmic
+pkgver=2.1.3
+pkgrel=1
+pkgdesc="IdleScreen for COSMIC Desktop"
+arch=('x86_64')
+url="https://github.com/idlescreen/idle-cosmic"
+license=('Apache-2.0')
+depends=('idle-daemon')
+optdepends=(
+  'idle-cli: Command line controller'
+  'idle-saver-beams: Beams screensaver plugin'
+  'idle-saver-bursts: Bursts screensaver plugin'
+)
+source=("https://github.com/idlescreen/idle-cosmic/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  cd "idle-cosmic-${pkgver}"
+  cargo build --release
+}
+
+package() {
+  cd "idle-cosmic-${pkgver}"
+  install -Dm755 "target/release/idlescreen-applet" "${pkgdir}/usr/bin/idlescreen-applet"
+}
