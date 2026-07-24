@@ -51,6 +51,12 @@ fn main() {
         std::process::exit(1);
     }
 
+    // Ensure config directories exist before systemd mount namespacing
+    if let Ok(home) = env::var("HOME") {
+        let _ = std::fs::create_dir_all(format!("{home}/.config/idle"));
+        let _ = std::fs::create_dir_all(format!("{home}/.config/idlescreen"));
+    }
+
     // Enable systemd user unit
     let _ = Command::new("systemctl")
         .args(["--user", "enable", "--now", "idle-daemon.service"])
