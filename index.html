@@ -101,8 +101,21 @@
             font-size: 1.05rem;
             color: var(--text-secondary);
             font-weight: 400;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             line-height: 1.6;
+        }
+
+        .info-badge {
+            display: inline-block;
+            background: rgba(255, 133, 65, 0.1);
+            border: 1px solid rgba(255, 133, 65, 0.25);
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            text-align: left;
+            line-height: 1.5;
         }
 
         .tabs {
@@ -118,7 +131,7 @@
 
         .tab-btn {
             flex: 1;
-            min-width: 100px;
+            min-width: 110px;
             background: transparent;
             border: none;
             color: var(--text-secondary);
@@ -281,12 +294,16 @@
             <span style="font-size:0.95rem;font-weight:500;color:var(--text-secondary);letter-spacing:0.04em">Package Repositories & Installation</span>
         </div>
         <p class="subtitle">Step-by-step instructions to install the IdleScreen repository & packages for your OS.</p>
+
+        <div class="info-badge">
+            ⚡ <strong>Standard Package:</strong> <code>idle-tui</code> (Universal for all Wayland compositors & DEs)<br>
+            🪐 <strong>COSMIC DE Only:</strong> <code>idle-cosmic</code> (Applet integration for COSMIC Desktop)
+        </div>
         
         <div class="tabs">
             <button class="tab-btn active" id="apt-tab" onclick="switchTab('apt')">Debian / Ubuntu</button>
             <button class="tab-btn" id="dnf-tab" onclick="switchTab('dnf')">Fedora / RHEL</button>
             <button class="tab-btn" id="arch-tab" onclick="switchTab('arch')">Arch Linux</button>
-            <button class="tab-btn" id="nix-tab" onclick="switchTab('nix')">Nix / NixOS</button>
             <button class="tab-btn" id="flatpak-tab" onclick="switchTab('flatpak')">Flatpak</button>
         </div>
 
@@ -311,9 +328,9 @@
                 </div>
 
                 <div class="step-item">
-                    <div class="step-label">Step 3: Install Package</div>
+                    <div class="step-label">Step 3: Install Standard Package (or idle-cosmic for COSMIC DE)</div>
                     <div class="installer-box">
-                        <div class="command" id="apt3Cmd">sudo apt install idle-cosmic</div>
+                        <div class="command" id="apt3Cmd">sudo apt install idle-tui</div>
                         <button class="copy-btn" onclick="copyCommand('apt3Cmd', this)">Copy</button>
                     </div>
                 </div>
@@ -333,9 +350,9 @@
                 </div>
 
                 <div class="step-item">
-                    <div class="step-label">Step 2: Refresh DNF Metadata & Install</div>
+                    <div class="step-label">Step 2: Refresh DNF Metadata & Install Standard Package</div>
                     <div class="installer-box">
-                        <div class="command" id="dnf2Cmd">sudo dnf check-update && sudo dnf install idle-cosmic</div>
+                        <div class="command" id="dnf2Cmd">sudo dnf check-update && sudo dnf install idle-tui</div>
                         <button class="copy-btn" onclick="copyCommand('dnf2Cmd', this)">Copy</button>
                     </div>
                 </div>
@@ -359,28 +376,6 @@
                     <div class="installer-box">
                         <div class="command" id="arch2Cmd">makepkg -si</div>
                         <button class="copy-btn" onclick="copyCommand('arch2Cmd', this)">Copy</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Nix Content -->
-        <div id="nix-content" class="tab-content">
-            <div class="section-title">Nix / NixOS Setup</div>
-            <div class="steps">
-                <div class="step-item">
-                    <div class="step-label">Option A: Run via Nix Flakes</div>
-                    <div class="installer-box">
-                        <div class="command" id="nix1Cmd">nix run github:idlescreen/packages#idle-cosmic</div>
-                        <button class="copy-btn" onclick="copyCommand('nix1Cmd', this)">Copy</button>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-label">Option B: Build Expression</div>
-                    <div class="installer-box">
-                        <div class="command" id="nix2Cmd">nix-build https://github.com/idlescreen/packages/archive/main.tar.gz -A idle-cosmic</div>
-                        <button class="copy-btn" onclick="copyCommand('nix2Cmd', this)">Copy</button>
                     </div>
                 </div>
             </div>
